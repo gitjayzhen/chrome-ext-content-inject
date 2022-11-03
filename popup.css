@@ -1,0 +1,37 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+#infoBox{
+    width: 440px;
+    padding: 10px;
+}
+
+.hasData{
+    display: block;
+}
+
+.noData{
+    display: none;
+}
+
+.structTitle{
+    font-weight: bold;
+    font-size: 12px;
+    padding-right: 15px;
+}
+
+#tagContainer, #aliasContainer{
+    margin-top: 5px;
+}
+
+.commonTitle{
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#matchResult, #repeatResult{
+    margin-top: 5px;
+}
+
+table th,td{
+    padding: 2px 10px;
+}

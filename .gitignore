@@ -1,0 +1,10 @@
+.idea
+.next
+.vscode
+.history
+node_modules
+package-lock.json
+*.tar.gz
+.DS_Store
+deploy
+static_url.ini

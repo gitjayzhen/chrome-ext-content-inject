@@ -1,0 +1,48 @@
+{
+    "name": "PageInjectAndCheck",
+    "description": "Page Inject And Check",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "http://*/*",
+        "https://*/*",
+        "declarativeContent"
+    ],
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/s16.png",
+            "32": "/images/s32.png",
+            "48": "/images/s48.png",
+            "128": "/images/s128.png"
+        }
+    },
+    "icons": {
+        "16": "/images/s16.png",
+        "32": "/images/s32.png",
+        "48": "/images/s48.png",
+        "128": "/images/s128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://jwensh.baidu.com/item/*",
+                "https://jwensh.baidu.com/item/*",
+                "http://jwensh.jayzhen.com/v*",
+                "https://jwensh.jayzhen.com/v*"
+            ],
+            "js": [
+                "/lib/zepto3.1.0.js",
+                "contentScript.js"
+            ],
+            "css": [
+                "inject.css"
+            ]
+        }
+    ]
+}

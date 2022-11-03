@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div id="infoBox">
+        <div id="reuslt">
+            <div id="matchResult">
+                <span class="commonTitle">匹配关系</span>
+                <div id="matchDataWaitInfo">匹配关系查询中...</div>
+                <table id="matchTable" class="noData">
+                    <thead>
+                        <tr>
+                            <th>lemmaId</th>
+                            <th>itemUrl</th>
+                            <th>创建时间</th>
+                            <th>来源</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div id="structResult" class="noData">
+                <div id="waitInfo">正在查询...</div>
+                <div id="categoriesContainer">
+                    <span class="structTitle">分类</span>
+                    <span id="categoriesData"></span>
+                </div>
+                <div id="tagContainer">
+                    <span class="structTitle">标签</span>
+                    <span id="tagData"></span>
+                </div>
+                <div id="aliasContainer">
+                    <span class="structTitle">同义词</span>
+                    <span id="aliasData"></span>
+                </div>
+            </div>
+            <div id="repeatResult">
+                <span class="commonTitle">重复词条</span>
+                <div id="repeatDataWaitInfo">重复词条查询中...</div>
+                <table id="repeatTable" class="noData">
+                    <thead>
+                        <tr>
+                            <th>最优lemmaId</th>
+                            <th>最优itemUrl</th>
+                            <th>创建时间</th>
+                            <th>搜索重复组</th>
+                            <th>百度重复组</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div id="cardResult">
+                <span class="commonTitle">卡片</span>
+                <div>
+                </div>
+            </div>
+            <script src="/lib/zepto3.1.0.js"></script>
+            <script src="popup.js"></script>
+    </div>
+</body>
+
+</html>
